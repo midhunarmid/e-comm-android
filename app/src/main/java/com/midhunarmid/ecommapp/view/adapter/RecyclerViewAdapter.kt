@@ -67,10 +67,10 @@ class RecyclerViewAdapter(context: Context, var responseData: ResponseData) :
             txt3.text = recyclerViewModel.items?.get(2)?.title
             txt4.text = recyclerViewModel.items?.get(3)?.title
 
-            subTxt1.text = recyclerViewModel.items?.get(0)?.subTitle
-            subTxt2.text = recyclerViewModel.items?.get(1)?.subTitle
-            subTxt3.text = recyclerViewModel.items?.get(2)?.subTitle
-            subTxt4.text = recyclerViewModel.items?.get(3)?.subTitle
+            subTxt1.text = recyclerViewModel.items?.get(0)?.subtitle
+            subTxt2.text = recyclerViewModel.items?.get(1)?.subtitle
+            subTxt3.text = recyclerViewModel.items?.get(2)?.subtitle
+            subTxt4.text = recyclerViewModel.items?.get(3)?.subtitle
         }
     }
 

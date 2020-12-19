@@ -8,8 +8,8 @@ data class Item(
     val clickAction: ClickAction? = null,
     @Json(name = "image")
     val image: String? = null,
-    @Json(name = "title")
-    val title: String? = null,
     @Json(name = "subtitle")
-    val subTitle: String? = null
+    val subtitle: String? = null,
+    @Json(name = "title")
+    val title: String? = null
 )
