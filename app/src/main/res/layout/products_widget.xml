@@ -57,11 +57,25 @@
             android:layout_height="wrap_content"
             card_view:cardElevation="5dp">
 
-            <ImageView
-                android:id="@+id/imgProduct1"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgProduct1"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                <TextView
+                    android:id="@+id/txtProduct1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/txtProductSub1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView xmlns:card_view="https://schemas.android.com/apk/res-auto"
@@ -70,11 +84,25 @@
             android:layout_height="wrap_content"
             card_view:cardElevation="5dp">
 
-            <ImageView
-                android:id="@+id/imgProduct2"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgProduct2"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                <TextView
+                    android:id="@+id/txtProduct2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/txtProductSub2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView xmlns:card_view="https://schemas.android.com/apk/res-auto"
@@ -83,11 +111,25 @@
             android:layout_height="wrap_content"
             card_view:cardElevation="5dp">
 
-            <ImageView
-                android:id="@+id/imgProduct3"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgProduct3"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                <TextView
+                    android:id="@+id/txtProduct3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/txtProductSub3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView xmlns:card_view="https://schemas.android.com/apk/res-auto"
@@ -96,11 +138,25 @@
             android:layout_height="wrap_content"
             card_view:cardElevation="5dp">
 
-            <ImageView
-                android:id="@+id/imgProduct4"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgProduct4"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                <TextView
+                    android:id="@+id/txtProduct4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/txtProductSub4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
         </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

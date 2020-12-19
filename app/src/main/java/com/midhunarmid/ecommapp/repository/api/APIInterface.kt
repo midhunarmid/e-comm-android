@@ -5,6 +5,6 @@ import retrofit2.Call
 import retrofit2.http.GET
 
 interface APIInterface {
-    @GET("/b/5fdd9ed3e3d1c53225093bbb")
+    @GET("/b/5fdd9ed3e3d1c53225093bbb/2")
     fun doGetHomeData(): Call<ResponseData>
 }
