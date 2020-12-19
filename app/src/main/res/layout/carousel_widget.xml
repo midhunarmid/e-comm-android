@@ -2,13 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <org.imaginativeworld.whynotimagecarousel.ImageCarousel
         android:id="@+id/carousel"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
+        android:layout_height="160dp"
         app:autoPlay="true"
         app:autoPlayDelay="3000"
         app:autoWidthFixing="true"
@@ -19,7 +18,7 @@
         app:carouselBackground="#333333"
         app:carouselType="BLOCK"
         app:imagePlaceholder="@drawable/ic_launcher_background"
-        app:imageScaleType="fitCenter"
+        app:imageScaleType="fitXY"
         app:imageViewId="@id/img"
         app:indicatorMargin="0dp"
         app:itemLayout="@layout/item_carousel"

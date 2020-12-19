@@ -2,6 +2,8 @@ package com.midhunarmid.ecommapp.helper
 
 import com.midhunarmid.ecommapp.BuildConfig
 import com.midhunarmid.ecommapp.repository.model.ErrorResponse
+import com.midhunarmid.ecommapp.repository.model.ResponseData
+import com.midhunarmid.ecommapp.view.adapter.RecyclerViewAdapter
 import io.reactivex.ObservableEmitter
 import org.json.JSONObject
 import retrofit2.Response
@@ -59,4 +61,11 @@ fun <T> Response<T>.processResponse(
             failure(ErrorResponse())
         }
     }
+}
+
+fun RecyclerViewAdapter.reload(value: ResponseData, haveData: (Boolean) -> Unit) {
+    this.responseData = value
+    getListFromResponseData(value)
+    notifyDataSetChanged()
+//    haveData(this.responseData.isEmpty()) //TODO should add empty list checking here
 }
