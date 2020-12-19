@@ -1,6 +1,8 @@
 package com.midhunarmid.ecommapp.repository.api
 
+import com.midhunarmid.ecommapp.BuildConfig
 import com.midhunarmid.ecommapp.repository.model.ResponseData
+import okhttp3.OkHttpClient
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -13,8 +15,15 @@ class RetrofitClientInstance {
 
     private fun getRetrofitInstance(): Retrofit? {
         if (retrofit == null) {
+            val httpClient = OkHttpClient.Builder()
+            if (BuildConfig.DEBUG) {
+                httpClient.addInterceptor(MockInterceptor())
+            }
+            val client = httpClient.build()
+
             retrofit = Retrofit.Builder()
                 .baseUrl(BASE_URL)
+                .client(client)
                 .addConverterFactory(MoshiConverterFactory.create())
                 .build()
         }
